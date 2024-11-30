@@ -1,20 +1,41 @@
-# Italia-Design-Jekyll-Theme - v0.9 by G.Gentili 2018
+# Design Jekyll Theme
 
-This is a theme for Jekyll or GitHub Pages, created by G.Gentili  
-mailto:giovanni.gentili@gmail.com
+A Jekyll theme based on the [UI Kit](https://github.com/italia/design-ui-kit)
+and built with [Bootstrap Italia](https://github.com/italia/bootstrap-italia/).
 
-This is NOT an official release of Team digitale/AgID.  
-Use it at your own risk, there's no guarantee.  
+## Getting started
 
-The theme implements the user interface guidelines for italian public web sites:  
+The theme itself is a starting point for a Jekyll-based website. You can refer
+to the [official Jekyll docs](https://jekyllrb.com/docs/) for further details
+on how to install it locally.
 
-http://design-italia.readthedocs.io/it/stable/doc/user-interface.html
+If you already have `bundler` installed, you can install jekyll and budler gems
+with:
 
-The theme uses components from the "Web Toolkit Reference Implentation" available here:  
-https://italia.github.io/design-web-toolkit/ (version 16.02.2018)
+`bundle install`
 
-Some part of the theme is derived from "Clean Blog by Start Bootstrap" available here:  
-https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll
+However, if you want to install the dependencies locally you can run:
 
-# Copyright and License
-Code released under the MIT license.
+`bundle install --path vendor/bundle`
+
+You can build the site and make it available on a local server with:
+
+`bundle exec jekyll serve --config {_config.yml, _config_dev.yml}`
+
+picking one of the two config files where:
+
+*  _config.yml is the production file
+*  _config_dev.yml is the development file.
+
+### Notes
+
+You can run the server just with `bundle exec jekyll serve`: the webiste will
+be available on http://localhost:4000/design-jeyll-theme. This is the default
+settings to allow usage with GitHub pages.
+
+The aforementioned addition of `_config_dev.yml` is needed to run the server on
+http://localhost:4000 without any subpath.
+
+# License
+This repository is licensed with a BSD-3-Clause license. Please check the
+[LICENSE](LICENSE) file to know more details about this.
